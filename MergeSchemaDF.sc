@@ -45,5 +45,4 @@ object MergeSchemaDF extends App{
   val mergeSeqDf = dfSeq.reduce(_ union _)
   mergeSeqDf.show()
 
-
 }
