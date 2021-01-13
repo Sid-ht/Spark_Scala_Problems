@@ -16,4 +16,5 @@ object Transpose extends App{
   val new_columnList = columnList.filter(! _.contains("ID"))
 
   new_df.withColumn("Total", new_columnList.map(c => col(c)).reduce((c1, c2) => c1 + c2)).show()
+
 }
