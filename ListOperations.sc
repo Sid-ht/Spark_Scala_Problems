@@ -33,5 +33,4 @@ object ListOperations extends App{
 
   df.groupBy("ids").agg(sum("values").as("Sum")).show()
 
-
 }
